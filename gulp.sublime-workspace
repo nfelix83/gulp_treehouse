@@ -1,0 +1,339 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stat",
+				"status	Window"
+			],
+			[
+				"postBody",
+				"postBodyString"
+			],
+			[
+				"post",
+				"postBodyString"
+			],
+			[
+				"content",
+				"contentType	Document"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "'use strict'\n\nvar gulp = require('gulp'),\n	concat = require('gulp-concat'),\n	uglify = require('gulp-uglify'),\n	rename = require('gulp-rename');\n\ngulp.task('concatScripts', function(){\n	gulp.src([\n		'js/jquery.js',\n		'js/sticky/jquery.sticky.js',\n		'js/main.js'])\n	.pipe(concat('app.js'))\n	.pipe(gulp.dest('js'));\n});\n\ngulp.task('minifyScripts', function(){\n	gulp.src('js/app.js')\n	.pipe(uglify())\n	.pipe(rename('app.min.js'))\n	.pipe(gulp.dest('js'));\n});\n\ngulp.task('default', ['concatScripts','minifyScripts'], function(){\n	console.log('Default');\n});",
+			"file": "treehouse-gulp-basics/gulpfile.js",
+			"file_size": 552,
+			"file_write_time": 130897870927607775,
+			"settings":
+			{
+				"buffer_size": 552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "treehouse-gulp-basics/js/app.min.js",
+			"settings":
+			{
+				"buffer_size": 103126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Lake Tahoe</title>\n    <link rel=\"stylesheet\" href=\"css/application.css\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n  </head>\n  <body> \n    <header id=\"top\" class=\"main-header\">\n      <span class=\"main-title\">Journey Through the Sierra Nevada Mountains</span>\n      <h1 class=\"main-heading\">Lake Tahoe, California</h1>\n      <img class=\"arrow\" src=\"img/arrow.svg\" alt=\"Down arrow\">\n    </header>\n    \n		<div class=\"primary-content\">\n			<p class=\"intro\">\n				Lake Tahoe is one of the most breathtaking attractions located in California. It's home to a number of ski resorts, summer outdoor recreation, and tourist attractions. Snow and skiing are a significant part of the area's reputation.\n			</p>\n			<a class=\"callout\" href=\"#more\">Find out more</a>\n      \n      <div class=\"wildlife\">\n        <h2>Check out all the Wildlife</h2>\n        <p>\n          As spawning season approaches, the fish acquire a humpback and protuberant jaw. After spawning, they die and their carcasses provide a feast for gatherings of <a href=\"#mink\">mink</a>, <a href=\"#bears\">bears</a>, and <a href=\"#eagles\">bald eagles</a>.\n        </p>\n      </div><!-- End .wildlife -->\n      \n			<a class=\"callout\" href=\"#wildlife\">See the Wildlife</a>\n		</div><!-- End .primary-content -->\n\n		<div class=\"secondary-content\"> \n      <div class=\"resorts\">\n        <img src=\"img/resort.jpg\" alt=\"Resort\">\n        <h3>From Tents to Resorts</h3>\n        <p>\n          Lake Tahoe is full of wonderful places to stay. You have the ability to sleep in the outdoors in a tent, or relax like a king at a five star resort. Here are our top three resorts:\n        </p>\n        <ul>\n          <li><a href=\"#hotels\">Lake Tahoe Resort Hotel</a></li>\n          <li><a href=\"#resorts\">South Lake Tahoe Resorts</a></li>\n          <li><a href=\"#lodging\">Tahoe Ski Resort Lodging</a></li>\n        </ul>		\n      </div>\n      \n      <div class=\"tips\">\n        <img src=\"img/mtn-landscape.jpg\" alt=\"Mountain Landscape\">\n        <h3>Pack Accordingly</h3>\n        <p>\n          One of most important things when it comes to traveling through the great outdoors is packing accordingly. Here are a few tips:\n        </p>\n        <ol>\n          <li>Bring layers of clothing</li>\n          <li>Pack sunscreen</li>\n          <li>Carry extra water just in case</li>\n          <li>Pack light</li>\n        </ol>\n      </div>\n		</div><!-- End .secondary-content -->\n    \n		<footer class=\"main-footer\">\n			<p>All rights reserved to the state of <a href=\"#\">California</a>.</p>\n			<a href=\"#top\">Back to top &raquo;</a>\n		</footer>\n    <script src=\"js/app.min.js\"></script>\n  </body>\n</html>",
+			"file": "treehouse-gulp-basics/index.html",
+			"file_size": 2681,
+			"file_write_time": 130897867733847859,
+			"settings":
+			{
+				"buffer_size": 2681,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Snippet: Lorem ipsum"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/noel/projects/gulp.th/treehouse-gulp-basics",
+		"/home/noel/projects/gulp.th/treehouse-gulp-basics/js"
+	],
+	"file_history":
+	[
+		"/home/noel/projects/gulp.th/treehouse-gulp-basics/js/app.js",
+		"/home/noel/projects/express.th/package.json",
+		"/home/noel/projects/express.th/templates/index.jade",
+		"/home/noel/projects/express.th/templates/partials/_nav.jade",
+		"/home/noel/projects/express.th/templates/partials/_head.jade",
+		"/home/noel/projects/express.th/templates/layout.jade",
+		"/home/noel/projects/express.th/templates/post.jade",
+		"/home/noel/projects/express.th/templates/blog.jade",
+		"/home/noel/projects/express.th/app.js",
+		"/home/noel/projects/express.th/public/css/animate.min.css",
+		"/home/noel/projects/express.th/mock-data/posts.json",
+		"/home/noel/projects/express.th/.src",
+		"/home/noel/projects/express.th/src/app.js",
+		"/home/noel/projects/node1/app.js",
+		"/home/noel/projects/node1/views/header.html",
+		"/home/noel/projects/node1/views/profile.html",
+		"/home/noel/projects/node1/designs/profile.html",
+		"/home/noel/projects/node1/views/footer.html",
+		"/home/noel/projects/node1/designs/index.html",
+		"/home/noel/projects/node1/views/search.html",
+		"/home/noel/projects/node1/renderer.js",
+		"/home/noel/projects/node1/views/error.html",
+		"/home/noel/projects/node1/designs/error.html",
+		"/home/noel/projects/node1/profile.js",
+		"/home/noel/projects/node1/router.js",
+		"/home/noel/projects/node1/package.json",
+		"/home/noel/projects/node1/example_profile.js",
+		"/home/noel/projects/node1/gulpfile.js"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "treehouse-gulp-basics/gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "treehouse-gulp-basics/js/app.min.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 103126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "treehouse-gulp-basics/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2650,
+								2650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 671.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gulp.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 136.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
